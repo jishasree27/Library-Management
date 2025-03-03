@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>KIT library</title>
+<style>
+     body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-image: url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlicmFyeXxlbnwwfHwwfHx8MA%3D%3D'); /* Replace with your image URL */
+        background-size: cover;
+        background-position: center;
+    }
+    .container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        color: black;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+  input {
+    margin: 5px 0;
+    padding: 8px;
+    width: 250px;
+    border: 2px solid #007bff;
+    border-radius: 20px; /* Curved edges */
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #0056b3;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px; /* Curved button */
+     margin: 10px 0; /* Adds space above and below the button */
+    background-color: black ;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+        .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: brown;
+        padding: 15px 0;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+    }
+        .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+     
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 16px;
+    }
+</style>
+</head>
+<body>
+<div class="navbar ">
+    <span class="fw-bold">📚 Library Management</span>
+    <a href="index.html" class="text-white" style="text-decoration: none; font-size: 24px;">
+        🏠
+    </a>
+</div>
+<div class="container">
+    <form action="add" method="post" class="btn1">
+        <h1>Welcome to KIT Library!</h1>
+        Name: <input type="text" name="uname" required><br><br>
+        Dept: <input type="text" name="udept" required><br><br>
+        Roll-No: <input type="text" name="uclg" required><br><br>
+        Phone:<input type="text" name="uphone" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <form action="add" method="get" class="">
+        <button type="submit">View</button>
+    </form>
+    
+</div>
+<footer class="footer">
+    <p>&copy; 2025 KIT Library. All rights reserved.</p>
+</footer>
+</body>
+</html>
